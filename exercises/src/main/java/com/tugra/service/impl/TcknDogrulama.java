@@ -32,11 +32,12 @@ public class TcknDogrulama {
 
         int ilk10basamakToplami = teklerinToplami + ciftlerinToplami + tcknDizi[9];
 
+        System.out.println("İlk 10 Basamak Toplamı : " + ilk10basamakToplami);
+
         if(ilk10basamakToplami % 10 != tcknDizi[10] || sonuc % 10 != tcknDizi[9]){
             return false;
         }
 
         return true;
     }
-
 }
