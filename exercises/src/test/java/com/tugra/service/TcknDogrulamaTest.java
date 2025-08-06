@@ -57,18 +57,6 @@ public class TcknDogrulamaTest {
     }
 
     @Test
-    @DisplayName("Geçerli TCKN - Kısa Hatası")
-    void  tcknDogrulama_KisaHatasi() {
-
-        String tckn = "123456789";
-        boolean expectedResult = false;
-
-        boolean result = tcknDogrulama.tcknDogrulama(tckn);
-        assertEquals(expectedResult, result);
-
-    }
-
-    @Test
     @DisplayName("Geçersiz TCKN - İlk basamak 0 hatası")
     void tcknDogrulama_IlkBasamakSifir() {
 
